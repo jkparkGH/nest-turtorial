@@ -74,4 +74,11 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 Nest is [MIT licensed](LICENSE).
 
-## TUTORIAL GOGO
+## TUTORIAL
+
+> 1. Decorator: Class에 함수기능을 추가 할 수 있다. 함수 또는 클래스 바로 위에 선언해야한다.
+> 2. Controller: URL을 가져오고 함수를 실행한다(express의 ROUTER 와 같은 역할, 간단하게 get, post 요청응답을 만들 수 있다)
+> 3. nest cli 명령어 > nest generate|g controller|c 로 해당 프로젝트에 원하는 이름의 컨트롤러를 import 시켜줄 수 있다, 매우 간편!!
+>    3-1. nest cli 명령어 > nest generate|g service|s 로 해당 프로젝트에 원하는 이름의 서비스를 import 시켜줄 수 있다, 매우 간편!!
+> 4. @Get / @Post / @Patch / @Delete && @Param / @Query / @Body 와 같은 데코레이터 기능도 존재한다
+> 5. DTO : data transfer object 사용자가 보낼 수 있는 데이터 형태, 보냈으면 하는 데이터 형태
