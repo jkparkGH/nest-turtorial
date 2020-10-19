@@ -9,6 +9,7 @@ import {
   Query,
 } from '@nestjs/common';
 import { CreateMoiveDto } from './dto/create-moive.dto';
+import { UpdateMoiveDto } from './dto/update-movie.dto';
 import { Movie } from './entities/movie.entity';
 import { MoviesService } from './movies.service';
 
@@ -42,10 +43,9 @@ export class MoviesController {
   }
 
   @Patch('/:id')
-  patchMoive(
-    @Param('id') id: number,
-    @Body('movieData') movieData: CreateMoiveDto,
-  ) {
+  patchMoive(@Param('id') id: number, @Body() movieData: UpdateMoiveDto) {
+    console.log('## patchMoive in Controller ##', movieData);
+
     return this.moviesService.patchMoive(id, movieData);
   }
 }
