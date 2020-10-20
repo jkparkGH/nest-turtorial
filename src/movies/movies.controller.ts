@@ -44,8 +44,6 @@ export class MoviesController {
 
   @Patch('/:id')
   patchMoive(@Param('id') id: number, @Body() movieData: UpdateMoiveDto) {
-    console.log('## patchMoive in Controller ##', movieData);
-
     return this.moviesService.patchMoive(id, movieData);
   }
 }
