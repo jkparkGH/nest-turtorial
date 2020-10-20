@@ -93,3 +93,12 @@ app.useGlobalPipes(
   }),
 );
 ```
+
+7. @Req, @Res 와 같은 데코레이터로 express.js에 접근하는건 가능하나, 공식문서에서 권장하는 방법은 아니라고 한다. (Fastify 또는 다른 프레임워크 확장성을 위해서라도)
+
+## TESTING TUTORIAL
+
+1. `jest`: 자바스크립트 테스팅 npm 모듈: https://jestjs.io/docs/en/api 참고
+2. (XXXX.spec.ts) 파일들이 테스트에서 사용된다
+3. `Unit Test` > 모든 function을 따로 테스트 하는것 vs `E2E Test` > 사용자 관점에서의 모든 액션을 0 - 100 까지 다 테스트
+4. describe / beforeEach / it / expect
